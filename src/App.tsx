@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-test
-    </div>
-  );
-}
+import './App.css';
+import Login from './ui/pages/login/Login';
+
+const App = () => (
+  <div>
+    <Login />
+  </div>
+);
 
 export default App;
