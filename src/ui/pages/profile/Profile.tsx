@@ -8,8 +8,10 @@ import { RootState } from '../../../bll/store';
 import Button from '../../components/styledComponents/button/Button';
 import Flex from '../../components/styledComponents/flex/Flex';
 import Title from '../../components/styledComponents/title/Title';
+import Wrapper from '../../components/styledComponents/wrapper/Wrapper';
 
 const Profile = () => {
+  const userLogin = useSelector((state: RootState) => state.user.userLogin);
   const isLogin = useSelector((state: RootState) => state.auth.isLoggedIn);
   const dispatch = useDispatch();
   if (!isLogin) {
@@ -18,16 +20,14 @@ const Profile = () => {
   const logoutHandler = () => {
     dispatch(setIsLoggedIn({ value: false }));
   };
-  const userLogin = localStorage.getItem('UserInfo');
-  const login = userLogin && JSON.parse(userLogin);
   return (
     <div>
       <Flex>
-        <Title marginRight="5px" marginTop="250px" fontWeight={400} fontSize="40px">
+        <Title marginRight="5px" marginTop="250px" fontWeight={400} fontSize="32px">
           Здравствуйте,
         </Title>
-        <Title marginTop="250px" fontWeight={700} fontSize="40px">
-          {login.login}
+        <Title marginTop="250px" fontWeight={700} fontSize="32px">
+          {userLogin}
         </Title>
       </Flex>
       <Flex>

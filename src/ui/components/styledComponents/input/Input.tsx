@@ -1,16 +1,11 @@
 import React from 'react';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const Inputs = styled.input<InputType>`
   font-size: 18px;
   padding: 10px;
-  ${props =>
-    props.error
-      ? css`
-          background-color: #f5e9e9;
-        `
-      : `background-color: #F5F5F5`};
+  background-color: #f5f5f5;
   border: none;
   border-radius: 8px;
   width: 100%;
@@ -26,7 +21,7 @@ const Inputs = styled.input<InputType>`
 const Label = styled.label`
   font-size: 16px;
   color: #1f1f1f;
-  margin-top: 74px;
+  margin-top: 40px;
   display: block;
 `;
 
