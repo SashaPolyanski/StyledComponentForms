@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/testForOnly/static/js/main.ba04d14c.js",
+    "main.js": "/testForOnly/static/js/main.b51e082f.js",
     "index.html": "/testForOnly/index.html",
-    "main.ba04d14c.js.map": "/testForOnly/static/js/main.ba04d14c.js.map"
+    "main.b51e082f.js.map": "/testForOnly/static/js/main.b51e082f.js.map"
   },
   "entrypoints": [
-    "static/js/main.ba04d14c.js"
+    "static/js/main.b51e082f.js"
   ]
 }
