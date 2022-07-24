@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/SashaPolyanski/testForOnly/static/js/main.d0a722b2.js",
-    "index.html": "/SashaPolyanski/testForOnly/index.html",
-    "main.d0a722b2.js.map": "/SashaPolyanski/testForOnly/static/js/main.d0a722b2.js.map"
+    "main.js": "/testForOnly/static/js/main.ba04d14c.js",
+    "index.html": "/testForOnly/index.html",
+    "main.ba04d14c.js.map": "/testForOnly/static/js/main.ba04d14c.js.map"
   },
   "entrypoints": [
-    "static/js/main.d0a722b2.js"
+    "static/js/main.ba04d14c.js"
   ]
 }
