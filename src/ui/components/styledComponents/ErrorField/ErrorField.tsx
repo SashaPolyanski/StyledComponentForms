@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import styled from 'styled-components';
 
-const StyledDivError = styled.div<DivErrorProps>`
+const StyledErrorField = styled.div<ErrorFieldPropsType>`
   border-radius: 8px;
   width: 100%;
   height: 60px;
@@ -13,11 +13,12 @@ const StyledDivError = styled.div<DivErrorProps>`
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  margin-bottom: 40px;
 `;
 
-const DivError = (props: DivErrorProps) => <StyledDivError {...props} />;
+const ErrorField = (props: ErrorFieldPropsType) => <StyledErrorField {...props} />;
 
-export default DivError;
-type DivErrorProps = {
+export default ErrorField;
+type ErrorFieldPropsType = {
   children: ReactNode;
 };

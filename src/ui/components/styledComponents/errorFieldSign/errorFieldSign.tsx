@@ -11,6 +11,6 @@ const StyledDivWarning = styled.div`
   border-radius: 50%;
   color: #ee6565;
 `;
-const DivWarning = () => <StyledDivWarning>!</StyledDivWarning>;
+const ErrorFieldSign = () => <StyledDivWarning>!</StyledDivWarning>;
 
-export default DivWarning;
+export default ErrorFieldSign;

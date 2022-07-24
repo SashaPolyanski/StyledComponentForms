@@ -7,9 +7,9 @@ const StyledFlex = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const Flex = (props: FlexType) => <StyledFlex {...props} />;
+const FlexContainer = (props: FlexType) => <StyledFlex {...props} />;
 
 type FlexType = {
   children: ReactNode;
 };
-export default Flex;
+export default FlexContainer;

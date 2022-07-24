@@ -10,9 +10,9 @@ const StyledTitle = styled.div<TextProps>`
   text-align: center;
 `;
 
-const Title = (props: TextProps) => <StyledTitle {...props} />;
+const TextBlock = (props: TextProps) => <StyledTitle {...props} />;
 
-export default Title;
+export default TextBlock;
 
 type TextProps = {
   children: ReactNode;

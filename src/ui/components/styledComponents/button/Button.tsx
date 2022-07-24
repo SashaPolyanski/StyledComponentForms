@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import styled from 'styled-components';
 
-const StyledButton = styled.button<ButtonType>`
+const StyledButton = styled.button<ButtonPropsType>`
   width: ${props => props.width};
   background-color: ${props => props.backgroundColor};
   text-align: center;
@@ -17,10 +17,10 @@ const StyledButton = styled.button<ButtonType>`
     opacity: 0.4;
   }
 `;
-const Button = (props: ButtonType) => <StyledButton {...props} />;
+const Button = (props: ButtonPropsType) => <StyledButton {...props} />;
 
 export default Button;
-type ButtonType = {
+type ButtonPropsType = {
   disabled?: boolean;
   children: ReactNode;
   backgroundColor: string;

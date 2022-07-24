@@ -2,28 +2,25 @@ import React from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 
-import Flex from '../components/styledComponents/flex/Flex';
-import Title from '../components/styledComponents/title/Title';
-import Wrapper from '../components/styledComponents/wrapper/Wrapper';
+import { PATH } from '../../common/constants/constants';
+import FlexContainer from '../components/styledComponents/flexContainer/FlexContainer';
+import TextBlock from '../components/styledComponents/textBlock/TextBlock';
+import WrapperContainer from '../components/styledComponents/wrapperContainer/WrapperContainer';
 import Login from '../pages/login/Login';
 import Profile from '../pages/profile/Profile';
 
-export const PATH = {
-  PROFILE: '/profile',
-};
-
 export const RoutesComponent = () => (
   <>
-    <Title marginTop="40px" fontSize="64px" fontWeight={700}>
+    <TextBlock marginTop="40px" fontSize="64px" fontWeight={700}>
       ONLY.
-    </Title>
-    <Flex>
-      <Wrapper>
+    </TextBlock>
+    <FlexContainer>
+      <WrapperContainer>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path={PATH.LOGIN} element={<Login />} />
           <Route path={PATH.PROFILE} element={<Profile />} />
         </Routes>
-      </Wrapper>
-    </Flex>
+      </WrapperContainer>
+    </FlexContainer>
   </>
 );

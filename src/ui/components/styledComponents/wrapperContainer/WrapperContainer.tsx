@@ -7,10 +7,10 @@ const StyledWrapper = styled.div<WrapperProps>`
   margin-top: ${props => props.marginTop};
 `;
 
-const Wrapper = (props: WrapperProps) => <StyledWrapper {...props} />;
+const WrapperContainer = (props: WrapperProps) => <StyledWrapper {...props} />;
 
 type WrapperProps = {
   children: ReactNode;
   marginTop?: string;
 };
-export default Wrapper;
+export default WrapperContainer;

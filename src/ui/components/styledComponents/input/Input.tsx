@@ -10,7 +10,6 @@ const Inputs = styled.input<InputType>`
   border-radius: 8px;
   width: 100%;
   height: 60px;
-  margin-top: 10px;
   border: ${props => props.border};
 
   &:focus {
@@ -21,14 +20,26 @@ const Inputs = styled.input<InputType>`
 const Label = styled.label`
   font-size: 16px;
   color: #1f1f1f;
-  margin-top: 40px;
   display: block;
 `;
 
-export const Input = ({ register, type, name, label, required, ...rest }: InputType) => (
+export const Input = ({
+  register,
+  type,
+  name,
+  label,
+  required,
+  placeholder,
+  ...rest
+}: InputType) => (
   <Label>
     {label}
-    <Inputs {...register(name, { required })} {...rest} type={type} />
+    <Inputs
+      {...register(name, { required })}
+      {...rest}
+      type={type}
+      placeholder={placeholder}
+    />
   </Label>
 );
 
@@ -40,4 +51,5 @@ type InputType = {
   type?: 'text' | 'password' | 'checkbox';
   border?: string;
   error?: boolean;
+  placeholder: string;
 };
