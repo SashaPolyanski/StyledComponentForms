@@ -38,12 +38,14 @@ const StyledCheckbox = styled.div<{ checked: boolean }>`
     background-color: ${props => (props.checked ? '#4a67ff' : '#ffffff')};
     left: 2px;
     top: 2px;
-    border-radius: 3px;
+    border-radius: 2px;
     transition: all 150ms;
   }
 `;
 const StyledLabelText = styled.span`
-  margin-left: 15px;
+  margin-left: 14px;
+  position: relative;
+  bottom: 4px;
 `;
 
 type CheckedPropsType = {
